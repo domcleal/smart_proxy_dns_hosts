@@ -5,7 +5,7 @@ module Proxy::Dns::Hosts
     plugin :dns_hosts, ::Proxy::Dns::Hosts::VERSION,
            :factory => proc { |attrs| ::Proxy::Dns::Hosts::Record.record(attrs) }
 
-    requires :dns, '>= 0' #, ::Proxy::VERSION
+    requires :dns, '>= 1.10'
 
     after_activation do
       require 'smart_proxy_dns_hosts/dns_hosts_main'
