@@ -1,3 +1,1 @@
-group :dns_hosts do
-  gem 'smart_proxy_dns_hosts'
-end
+gem 'smart_proxy_dns_hosts'
